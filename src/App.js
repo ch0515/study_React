@@ -1,20 +1,8 @@
 import './App.css';
 
 function App() {
-  const name='리액트';
-  return(
-    <div
-      style={{
-        backgroundColor: 'black',
-        color: 'aqua',
-        fontSize: '48px',
-        fontWeight: 'bold',
-        padding: 16
-      }}
-      >
-        {name}
-      </div>
-  );
+  const name = '리액트';
+  return <div className="react">{name}</div>
 }
 
 export default App;
