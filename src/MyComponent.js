@@ -1,14 +1,14 @@
-const MyComponent = props => {
-    const {name, children} = props;
+const MyComponent = props =>{
     return(
         <div>
-        안녕하세요, 제 이름은 {name}입니다. <br/>
-        children의 값은 {children} 입니다.
+            안녕하세요, 제 이름은 {props.name} 입니다.<br/>
+            children 값은 {props.children}입니다.
         </div>
     );
 };
+
 MyComponent.defaultProps = {
-    name: '기본 이름'
+    name: '기본이름'
 };
 
-export default MyComponent; // -> 모듈 내보내기
+export default MyComponent;
